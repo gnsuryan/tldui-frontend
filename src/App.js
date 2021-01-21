@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Component } from 'react';
+import "./styles.css";
+import Form from './components/Form'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+   render() {
+
+    return (
+    <div>  
+		<div className="App-header">
+          <h2>Testlogic on Docker Reports</h2>
+		</div>
+		<Form />
+	</div>
+    )
+  }
 }
 
-export default App;
+
+export default App
